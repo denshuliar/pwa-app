@@ -6,8 +6,8 @@ module.exports = {
 		msTileColor: '#42b983',
 		appleMobileWebAppCache: 'yes',
 		manifestOptions: {
-			background_color: '#42b983'
-		}
+			background_color: '#42b983',
+		},
 	},
 
 	chainWebpack: (config) => {
@@ -28,7 +28,7 @@ module.exports = {
 	css: {
 		loaderOptions: {
 			scss: {
-				prependData: `@import "~@/assets/styles/main.scss";`
+				prependData: '@import "~@/assets/styles/main.scss";',
 			},
 		},
 	},
