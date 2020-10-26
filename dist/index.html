@@ -2,9 +2,9 @@
                 const clientId = /:\/\/([^\/]+)/.exec(window.location.href)[1].split('.')[0]
 
                 if (!clientId.includes('localhost')) {
-                    localStorage.setItem('client_id', JSON.stringify(clientId))
+                    localStorage.setItem('client_id', JSON.stringify('dart-cafe'))
                 } else {
-                    localStorage.setItem('client_id', JSON.stringify('test-outlet'))
+                    localStorage.setItem('client_id', JSON.stringify('dart-cafe'))
                 }
             }
 

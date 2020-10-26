@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.fe395f8850ac6fb3a3daa337f64e650c.js"
+  "precache-manifest.9f947d459c7e964647d559b8725d88ac.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "sqr-menu-web"});
