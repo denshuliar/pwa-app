@@ -18,8 +18,11 @@ import {
 } from './services/session'
 
 import './assets/styles/main.scss'
+import wb from './registerServiceWorker';
 
 Vue.config.productionTip = false
+
+Vue.prototype.$workbox = wb;
 
 const screenWidth = window.screen.width
 

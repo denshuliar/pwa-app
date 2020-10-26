@@ -72,6 +72,14 @@ export default {
 		this.fetchData()
 	},
 
+	created() {
+		if (this.$workbox) {
+			this.$workbox.addEventListener('waiting', () => {
+				this.prompt = true;
+			});
+		}
+	},
+
 	methods: {
 		...mapActions({
 			getClient: 'client/getClient',
@@ -80,6 +88,11 @@ export default {
 
 			setOrder: 'orders/setOrder',
 		}),
+
+		async update() {
+			this.prompt = false;
+			await this.$workbox.messageSW({ type: 'SKIP_WAITING' });
+		},
 
 		async fetchData () {
 			this.showSplashScreen = true

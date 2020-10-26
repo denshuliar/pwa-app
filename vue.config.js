@@ -1,4 +1,14 @@
 module.exports = {
+	publicPath: './',
+
+	pwa: {
+		themeColor: '#42b983',
+		msTileColor: '#42b983',
+		appleMobileWebAppCache: 'yes',
+		manifestOptions: {
+			background_color: '#42b983',
+		},
+	},
 	chainWebpack: (config) => {
 		const svgRule = config.module.rule('svg')
 
@@ -16,7 +26,7 @@ module.exports = {
 	css: {
 		loaderOptions: {
 			scss: {
-				prependData: `@import "~@/assets/styles/main.scss";`
+				prependData: '@import "~@/assets/styles/main.scss";',
 			},
 		},
 	},
