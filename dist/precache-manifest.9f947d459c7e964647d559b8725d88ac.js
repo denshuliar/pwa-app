@@ -56,11 +56,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/Waiter.e3814ca2.css"
   },
   {
-    "revision": "0e11b5bb50aa77130572",
+    "revision": "d3c517f6bf6a81d686dd",
     "url": "css/app.5c8c0013.css"
   },
   {
-    "revision": "cd539528af4c85f32e18028a0c7322be",
+    "revision": "5c37db75ca8aedbc84d03d459ccf1a9a",
     "url": "index.html"
   },
   {
@@ -128,8 +128,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/Waiter.d3b634d0.js"
   },
   {
-    "revision": "0e11b5bb50aa77130572",
-    "url": "js/app.058e1b25.js"
+    "revision": "d3c517f6bf6a81d686dd",
+    "url": "js/app.5ab0f994.js"
   },
   {
     "revision": "af251ed771a77e21f710",
