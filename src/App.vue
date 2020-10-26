@@ -66,18 +66,18 @@ export default {
 		},
 	},
 
+	created () {
+		if (this.$workbox) {
+			this.$workbox.addEventListener('waiting', () => {
+				this.prompt = true
+			})
+		}
+	},
+
 	mounted () {
 		this.checkSelectedLanguage()
 		this.getActiveOrder()
 		this.fetchData()
-	},
-
-	created() {
-		if (this.$workbox) {
-			this.$workbox.addEventListener('waiting', () => {
-				this.prompt = true;
-			});
-		}
 	},
 
 	methods: {
@@ -89,9 +89,10 @@ export default {
 			setOrder: 'orders/setOrder',
 		}),
 
-		async update() {
-			this.prompt = false;
-			await this.$workbox.messageSW({ type: 'SKIP_WAITING' });
+		async update () {
+			this.prompt = false
+
+			await this.$workbox.messageSW({ type: 'SKIP_WAITING' })
 		},
 
 		async fetchData () {

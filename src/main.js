@@ -17,12 +17,13 @@ import {
 	setValueWithExpiry,
 } from './services/session'
 
+import wb from './registerServiceWorker'
+
 import './assets/styles/main.scss'
-import wb from './registerServiceWorker';
+
+Vue.prototype.$workbox = wb
 
 Vue.config.productionTip = false
-
-Vue.prototype.$workbox = wb;
 
 const screenWidth = window.screen.width
 
